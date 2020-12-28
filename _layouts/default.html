@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>{{ page.title }} | Manav Malik</title>
+<script
+        crossorigin="anonymous"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        src="https://code.jquery.com/jquery-3.3.1.js">
+</script>
+<script>
+    $(function () {
+        $("#header").load("/header.html");
+        $("#footer").load("/footer.html");
+    });
+</script>
+<div id="header"></div>
+
+<body>
+
+<!-- Header -->
+<header class="w3-container w3-lime w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">{{ page.title }}</h1>
+    <p class="w3-xlarge">Manav Malik</p>
+    <a class="w3-button w3-black w3-padding-large w3-large w3-margin-top" href="#content">See More</a>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="content">
+    <div class="w3-content">
+        <div>
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+
+</body>
+</html>
