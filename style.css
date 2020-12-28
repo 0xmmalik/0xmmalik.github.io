@@ -17,12 +17,12 @@ a.icon-link {
 }
 
 .sidenav {
-  width: 130px;
+  height: 100%;
+  width: 160px;
   position: fixed;
+  top: 50px;
   z-index: 1;
-  top: 50%;
-  left: 10px;
-  background: #eee;
+  background: #cddc39;
   overflow-x: hidden;
   padding: 8px 0;
 }
