@@ -19,21 +19,13 @@
 <!-- Header -->
 <header class="w3-container w3-lime w3-center" style="padding:128px 16px">
     <h1 class="w3-margin w3-jumbo">{{ page.title }}</h1>
-    <p class="w3-xlarge">
-      {{ page.date | date_to_string }}
-    </p>
+    <p class="w3-xlarge">{{ page.blurb }}</p>
+    <p class="w3-large">{{ page.date | date_to_string }}</p>
     <a class="w3-button w3-black w3-padding-large w3-large w3-margin-top" href="#post">Read Post</a>
 </header>
 <div class="w3-row-padding w3-padding-64 w3-container" id="post">
     <div class="w3-content">
         <div>
-            <h1>
-              {{ page.title }}
-            </h1>
-            <h3 class="w3-padding-32">
-              {{ page.blurb }}
-            </h3>
-
             <p class="w3-text-grey">
               {{ content }}
             </p>
