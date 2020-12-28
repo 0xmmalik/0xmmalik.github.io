@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 a.link {
     text-decoration: underline;
     color: #515816;
