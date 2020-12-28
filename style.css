@@ -1,0 +1,13 @@
+a.link {
+    text-decoration: underline;
+    color: #515816;
+}
+
+a.link:hover {
+    text-decoration: none;
+    color: #727e21;
+}
+
+a.icon-link {
+    text-decoration: none;
+}
