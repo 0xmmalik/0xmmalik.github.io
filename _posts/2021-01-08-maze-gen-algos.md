@@ -9,6 +9,8 @@ blurb: Terraria Zeus Expansion Mod Devlog
 
 Greek Mythology is cool. For the last week or so, I've been collaborating with [raghav198](https://www.github.com/raghav198) (a.k.a. quaternion) to create a mod for Terraria that adds elements of Greek Mythology to the game (hence the name "Zeus Expansion"). As one of these additions, we decided to incldue a Labyrinth, the twisting underground maze that houses the Minotaur. Rather than having a hard-coded maze, we decided to use a maze-generation algorithm that would create a different Labyrinth for every world.
 
+**Jump To:** | [General Idea](#general-idea) | [Implementation](#implementation) | [Results](#results)
+
 ### General Idea
 
 Consider a 10x10 grid that represents our maze:  
@@ -342,4 +344,3 @@ Enjoy some mazes using square fonts: :):)
 ![good maze 2](/img/maze_gen_algos/05.png)
 
 ![good maze 3](/img/maze_gen_algos/06.png)
-
