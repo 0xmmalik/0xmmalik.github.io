@@ -12,13 +12,13 @@ Greek Mythology is cool. For the last week or so, I've been collaborating with [
 ### General Idea
 
 Consider a 10x10 grid that represents our maze:  
-![blank 10x10 grid](img/maze_gen_algos/01.png)
+![blank 10x10 grid](/img/maze_gen_algos/01.png)
 
 We'll randomly pick a seed tile at the top and go from there:  
-![seed tile](img/maze_gen_algos/02.png)
+![seed tile](/img/maze_gen_algos/02.png)
 
 After we've created the seed tile, we'll start keeping track of all the new tiles we've opened up in the maze so far. Once we have a seed tile, we will select a random number of available adjacent tiles to also open up (say, 2 of the 3; seed tile is blue):  
-![adjacent tiles](img/maze_gen_algos/03.png)
+![adjacent tiles](/img/maze_gen_algos/03.png)
 
 Now, with the new tiles we've just opened up, we repeat the same process and open up a random number of the adjacent tiles. We continue until we have no more tiles to open. And, just like that, we have a maze!
 
@@ -337,9 +337,9 @@ It's always possible that the random numbers (or the number of viable tiles) wil
 
 Enjoy some mazes using square fonts: :):)
 
-![good maze 1](img/maze_gen_algos/04.png)
+![good maze 1](/img/maze_gen_algos/04.png)
 
-![good maze 2](img/maze_gen_algos/05.png)
+![good maze 2](/img/maze_gen_algos/05.png)
 
-![good maze 3](img/maze_gen_algos/06.png)
+![good maze 3](/img/maze_gen_algos/06.png)
 
