@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Experimenting with Maze Generation Algorithms"
-date: 2020-12-29
+date: 2021-01-08
 blurb: Terraria Zeus Expansion Mod Devlog
 ---
 
