@@ -2,7 +2,7 @@
 layout: post
 title: "Bug in Maze Gen?"
 date: 2021-01-10
-blurb: Terraria Zeus Expansion Mod Devlog #2
+blurb: Terraria Zeus Expansion Mod Devlog \#2
 ---
 
 ##### So I realized there was a bug in the maze generation!
