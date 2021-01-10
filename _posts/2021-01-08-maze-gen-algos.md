@@ -124,6 +124,8 @@ for (int i = 0; i < num; i++)
 
 We have a maze generator... almost!
 
+(Note: there is a bug in the implementation! See [here](https://0xmmalik.github.io/blog/2021/01/10/maze-gen-bug) for more information!)
+
 ### Results
 Here's an example maze we can get from the generator: (pretty neat, eh?)
 
