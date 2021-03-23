@@ -1,4 +1,4 @@
-var status = "m";
+var status = "g";
 
 /*
   
