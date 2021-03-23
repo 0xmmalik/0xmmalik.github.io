@@ -23,7 +23,7 @@ a.icon-link {
   top: 50px;
   z-index: 0;
   background: #cddc39;
-  overflow-x: hidden;
+  overflow-x: auto;
   padding: 8px 0;
 }
 
