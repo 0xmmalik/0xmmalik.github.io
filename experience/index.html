@@ -10,11 +10,33 @@ title: Experience
         position: relative;
         top: 0%;
         transform: translate(0, 0%);
-    }     
+    }
+    
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+
+    .active, .accordion:hover {
+        background-color: #ccc; 
+    }
+
+    .panel {
+        padding: 0 18px;
+        display: none;
+    }
 </style>
 
-<h2>Capture-the-Flag Competitions</h2>
-<div class="owl-carousel" style="vertical-align:top;">
+<button class="accordion">Capture-the-Flag Competitions (CTFs)</button>
+<div class="panel owl-carousel" style="vertical-align:top;">
     <div class="w3-card-4 w3-light-gray" style="box-shadow:none;height:375px;width:33%;display:inline-block;margin-top:2px;vertical-align:top;">
         <div class="w3-container w3-center toppify" style="height:375px;">
             <img src="/img/pico.jpeg" alt="picoCTF" style="width:250px;margin-top:15px;">
@@ -55,6 +77,23 @@ title: Experience
         </div>
     </div>
 </div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+              panel.style.display = "none";
+          } else {
+              panel.style.display = "block";
+          }
+        });
+    }
+</script>
 
 <!--<script>
     $(document).ready(function(){
