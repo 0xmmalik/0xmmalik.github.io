@@ -44,10 +44,3 @@ a.icon-link {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
-::-moz-selection{
-	background: #727e21;
-}
-::selection{
-	background: #727e21;
-}
