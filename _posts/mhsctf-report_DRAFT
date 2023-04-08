@@ -9,7 +9,31 @@ blurb: My experience running a CTF
 
 I independently organized and hosted [MHSCTF 2022](https://mhsctf2022.0xmmalik.repl.co) and [MHSCTF 2023](https://mhsctf.0xmmalik.repl.co) and I've finally decided to record some of my thoughts on the experience for other people or (more likely) my own future reference.
 
-**Jump To:** | [What is a CTF?](#what-is-a-ctf)
+**Jump To:**
+- [What is a CTF?](#what-is-a-ctf)
+- [MHSCTF Idea](#mhsctf-idea)
+- [MHSCTF 2022](#mhsctf-2022)
+- [MHSCTF 2023](#mhsctf-2023)
 
 ### What is a CTF?
-CTF stands for capture-the-flag. In the context of cybersecurity competitions, this means 
+CTF stands for capture-the-flag. In the context of cybersecurity competitions, this refers to little digital flags that must be captured to win. The most common type of CTF is a Jeopardy-style CTF, and this is the kind I chose to run. Like the game show Jeopardy, these types of competitions include different levels of challenges (with point values assigned according to difficulty) from various categories (typically including cryptography, digital forensics, web exploits, binary exploits, reverse engineering, etc.). Each challenge consists of some target — such as a website or a program — that must be exploited or hacked in some way, and doing so yields a string of text called a “flag,” which is then submitted for points.
+
+The second, less common type of CTF is Attack-Defense. These entail multiple teams battling over control of the same machine. Because I don’t have much experience with these, I won’t go into much detail for fear of embarrassing myself.
+
+### MHSCTF Idea
+In the past, I’ve actively participated in picoCTF, HSCTF, and redpwnCTF. Over time, these have become established as major competitions in the world of cybersecurity. As this has happened, the challenges they feature have become more and more difficult making it nearly impossible for beginners to enjoy the competitive experience. 2022 was the first year MHSCTF was hosted, which meant there was no pressure for me to appeal to advanced teams and entry-level teams could potentially have a shot at solving all the challenges. Though I initially only wanted to host MHSCTF as a result of my own interests in passions, some part of me wanted to create an experience I would like to have had as a first-time CTF player (in pico 2019). But mostly, I just thought it was cool.
+
+### MHSCTF 2022
+
+![MHSCTF logo](/img/mhsctf.svg)
+
+**Challenges:** I wrote my first few challenges in late 2020 and ended up with a total of 45. Only a couple were very interesting/difficult in any way. This was mostly intentional, so beginner-level teams would have an opportunity to learn some very basic skills. 
+
+**Sponsors:** Over the course of my preparations, I ended up reaching out to 21 different companies to ask for their sponsorship of the event. I heard back from nine of them and actually received sponsorships from four: Trail of Bits, Wolfram Research, Binary Ninja, and Hak5. In my experiences organizing both MHSCTF 2022 and 2023, Trail of Bits tended to be very lenient and helpful with their contributions (they were the only sponsor that contributed money instead of prizes). I originally planned for a monetary prize pool of $450, but this sponsorship allowed me to make it $1000 instead.
+
+### MHSCTF 2023
+When I was first thinking about this year’s edition of the competition, I thought it would be really fun to have it be themed in some way and committed myself to having it run from the beginning of February until Valentine’s Day. You’ll remember that last year, I had to push back the start date a couple times because of unforeseen circumstances and unpreparedness, so this was going to be an ambitious one for sure. One of the first things I did besides writing challenges was create a Valentine’s Day version of the logo:
+
+![MHSCTF valentine logo](/img/mhsctf/mhsctf_valentine_logo.png)
+
+I had always planned 
