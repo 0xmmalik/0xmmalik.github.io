@@ -1,73 +1,163 @@
-<!DOCTYPE html>
-<html lang="en">
-<title>Home | Manav Malik</title>
-<script
-        crossorigin="anonymous"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        src="https://code.jquery.com/jquery-3.3.1.js">
-</script>
-<script>
-    $(function () {
-        $("#header").load("/header.html");
-        $("#footer").load("/footer.html");
-    });
-</script>
-<div id="header"></div>
-
-<body>
-
-<!-- Header -->
-<header class="w3-container w3-lime w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin w3-jumbo">Home</h1>
-    <p class="w3-xlarge">Manav Malik</p>
-    <a class="w3-button w3-black w3-padding-large w3-large w3-margin-top" href="#about">See More</a>
-</header>
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container" id="about">
-    <div class="w3-content">
-        <div class="w3-twothird">
-            <h1>About</h1>
-            <h5 class="w3-padding-32">Hi there! My name is Manav Malik and I'm a computer science student at Rochester Institute of Technology. I have been programming for over eight years and am experienced in Python, Java, HTML, CSS, JavaScript, PHP, ASP, and SQL. I'm an avid learner of cybersecurity and cryptography.</h5>
-            <p class="w3-text-grey"></p>
-        </div>
-
-        <div class="w3-third w3-center">
-            <a class="w3-button w3-black w3-padding-large w3-large w3-margin-top" href="Manav Malik Resume.pdf" target="_blank">Resume</a>
-<!--             <a class="w3-button w3-black w3-padding-large w3-large w3-margin-top" href="Manav_Malik_HS_Brag_Sheet.pdf" target="_blank">High School Brag Sheet</a> -->
-        </div>
-    </div>
-</div>
-
+<!DOCTYPE HTML>
 <!--
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-    <div class="w3-content">
-        <div class="w3-third w3-center">
-            <i class="fa fa-coffee w3-padding-64 w3-hover-text-lime w3-margin-right"></i>
-        </div>
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Manav Malik</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="assets/js/jquery.min.js"></script>
+		<script>
+			$(function () {
+				$("#custom-header").load("/header.html");
+				$("#sb-inner").load("/sb-inner.html");
+			});
+		</script>
+	</head>
+	<body class="is-preload">
 
-        <div class="w3-twothird">
-            <h1>Lorem Ipsum</h1>
-            <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</h5>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-            <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-    </div>
-</div>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-</div>-->
+							<!-- Header -->
+								<header id="custom-header"></header>
 
-<div id="footer"></div>
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Hi, I’m Manav</h1>
+											<p>Computer Science, RIT</p>
+										</header>
+										<p>Hi there! My name is Manav Malik and I'm a student at Rochester Institute of Technology. I have been programming for nine years and am experienced in Python, Java, HTML, CSS, JavaScript, PHP, ASP, and SQL. I'm an avid learner of cybersecurity and cryptography.</p>
+										<ul class="actions">
+											<li><a href="/Manav_Malik_Resume.pdf" target="_blank" class="button primary big">Resume</a></li>
+<!--											<li><a href="/Manav_Malik_HS_Brag_Sheet.pdf" target="_blank" class="button primary big">High School Brag Sheet</a></li>-->
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="img/senior-pic.jpeg" alt="picture of me" />
+									</span>
+								</section>
 
-</body>
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Skills & Interests</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon solid fa-lock"></span>
+											<div class="content">
+												<h3>Cybersecurity</h3>
+												<p>I've been participating in capture-the-flag cybersecurity competitions for 4 years. I independently organized my own CTF (<a href="/projects#mhsctf">MHSCTF</a>) two years in a row. I completed a <a href="/projects#reversing">research project on reverse engineering</a> for my AP Research course.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-code"></span>
+											<div class="content">
+												<h3>Programming</h3>
+												<p>I primarily program in Python or Java. I am also familiar with C. I began programming about 9 years ago.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-music"></span>
+											<div class="content">
+												<h3>Music</h3>
+												<p>I have been playing violin for 8 years and was the concertmaster of my high school orchestra. I am currently an RIT Performing Arts Scholar.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-calculator"></span>
+											<div class="content">
+												<h3>Math</h3>
+												<p></p>
+											</div>
+										</article>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Ipsum sed dolor</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="#" class="image"><img src="img/pic01.jpg" alt="" /></a>
+											<h3>Interdum aenean</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="img/pic02.jpg" alt="" /></a>
+											<h3>Nulla amet dolore</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="img/pic03.jpg" alt="" /></a>
+											<h3>Tempus ullamcorper</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="img/pic04.jpg" alt="" /></a>
+											<h3>Sed etiam facilis</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="img/pic05.jpg" alt="" /></a>
+											<h3>Feugiat lorem aenean</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="img/pic06.jpg" alt="" /></a>
+											<h3>Amet varius aliquam</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner" id="sb-inner"></div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>

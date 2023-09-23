@@ -1,145 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<title>Projects | Manav Malik</title>
-<script
-        crossorigin="anonymous"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        src="https://code.jquery.com/jquery-3.3.1.js">
-</script>
-<script>
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+  <title>Projects — Manav Malik</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/fontawesome-all.css">
+  <script src="/assets/js/jquery.min.js"></script>
+  <script>
     $(function () {
-        $("#header").load("/header.html");
-        $("#footer").load("/footer.html");
+      $("#custom-header").load("/header.html");
+      $("#sb-inner").load("/sb-inner.html");
     });
-</script>
-<div id="header"></div>
+  </script>
+</head>
+<body class="is-preload">
 
-<body>
+<!-- Wrapper -->
+<div id="wrapper">
 
-<header class="w3-container w3-lime w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin w3-jumbo">Projects</h1>
-    <p class="w3-xlarge">Manav Malik</p>
-    <a class="w3-button w3-black w3-padding-large w3-large w3-margin-top" href="#mhscs">See More</a>
-</header>
-        
-<div class="sidenav w3-hide-small w3-hide-medium">
-  <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="#mhscs">MHSCS</a>
-  <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="#crystal-mod">Dark Crystal</a>
-  <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="#student-grouper">StudentGrouper</a>
-  <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="#mdm">Mask Detection</a>
-  <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="#1vpp">1VPP</a>
-  <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="#mhsctf">MHSCTF</a>
-  <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="#sang-bot">Sang Bot</a>
-</div>
+  <!-- Main -->
+  <div id="main">
+    <div class="inner">
 
-<div class="w3-row-padding w3-padding-64 w3-container" id="mhscs">
-    <div class="w3-content">
-        <div class="w3-twothird">
-            <h1>MHSCS</h1>
-            <h5 class="w3-padding-32">An official website for my high school's computer science department.</h5>
+      <!-- Header -->
+      <header id="custom-header"></header>
 
-            <p class="w3-text-dark-grey">I designed and created a website for Mentor High School's computer science using
-                ASP.NET and MVC web design.</p>
-        </div>
+      <!-- Content -->
+      <section>
+        <header class="main">
+          <h1>Projects</h1>
+        </header>
 
-        <div class="w3-third w3-center">
-            <img src="/img/mhscs.png" width="110%">
-        </div>
+        <p>Here are some of my favorite projects I've worked on over the years.</p>
+        <ul class="actions small">
+          <li><p>Jump to:</p></li>
+          <li><a href="#mhsctf" class="button small">MHSCTF</a></li>
+          <li><a href="#reversing" class="button small">Cornucopia (Reverse Engineering)</a></li>
+          <li><a href="#wicys" class="button small">WiCyS CTF</a></li>
+        </ul>
+
+        <span class="image left"><img src="/img/proj/mhsctf.svg"></span>
+        <h2 id="mhsctf">MHSCTF</h2>
+        <h4>A capture-the-flag cybersecurity competition.</h4>
+        <p>After founding Mentor High's Computer Science club, I decided to reach out to some people to collaborate and host our school's first-ever cybersecurity competition: MHSCTF. The event was a massive success! In 2022, we reached 1600+ participants in 800+ teams from 20+ countries all over the world! The 2023 competition had 2300+ participants from even more countries. You can find MHSCTF online <a href="https://mhsctf.0xmmalik.repl.co" target="_blank">here</a>.</p>
+
+        <span class="image right"><img src="/img/proj/cornucopia.svg"></span>
+        <h2 id="reversing">Cornucopia</h2>
+        <h4></h4>
+      </section>
+
     </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <div class="inner" id="sb-inner"></div>
+  </div>
+
 </div>
 
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="crystal-mod">
-    <div class="w3-content">
-        <div class="w3-third w3-center">
-            <img src="/img/crystal_mod.png" width="90%">
-        </div>
-
-        <div class="w3-twothird">
-            <h1>Dark Crystal</h1>
-            <h5 class="w3-padding-32">A Minecraft mod that adds new weapons, tools, and superpowers!</h5>
-
-            <p class="w3-text-dark-grey">I created a Minecraft mod that adds new items such as crystals that give you superpowers, magic bones that summon pets, powerful dark swords and tools which can give you cool effects, and more! You can see the mod <a href="https://www.curseforge.com/minecraft/mc-mods/dark-crystal" target="_blank">here</a> or contribute to it <a href="https://www.github.com/0xmmalik/dark-crystal" target="_blank">here</a>.</p>
-            <iframe src="https://www.cfwidget.com/minecraft/mc-mods/431909" width="100%" style="border: none;"></iframe>
-        </div>
-    </div>
-</div>
-        
-<div class="w3-row-padding w3-padding-64 w3-container" id="student-grouper">
-    <div class="w3-content">
-        <div class="w3-twothird">
-            <h1>StudentGrouper</h1>
-            <h5 class="w3-padding-32">A minimal desktop application that groups students.</h5>
-
-            <p class="w3-text-dark-grey">At the request of one of my teachers, I developed a Java-based desktop application that's simple and easy-to-use. It performs the basic classroom tasks of selecting random students as well as putting them in random groups. You can find StudentGrouper <a href="https://0xmmalik.github.io/StudentGrouper" target="_blank">here</a>.</p>
-        </div>
-
-        <div class="w3-third w3-center">
-            <i class="w3-padding-64">Picture of StudentGrouper here</i>
-        </div>
-    </div>
-</div>
-        
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="mdm">
-    <div class="w3-content">
-        <div class="w3-third w3-center">
-            <img src="/img/php8M7jbu.jpg" width="90%">
-        </div>
-
-        <div class="w3-twothird">
-            <h1>Mask Detection Monitor</h1>
-            <h5 class="w3-padding-32">A tool that uses Convolutional Neural Networks to calculate a Mask Score in a populated area.</h5>
-
-            <p class="w3-text-dark-grey">I collaborated with <a href="https://www.zeyadmansour.com" target="_blank">Zeyad Mansour</a> to create a Mask Detection Monitor for the 2021 HS Hack OSU Hacakthon (1st place project). Our project uses OpenCV and Neural Networks to determine whether or not people are wearing masks. You can check out our web-app <a href="https://www.zeyadmansour.com/sdm/" target="_blank">here</a> (currently down while we figure out hosting issues) or our GitHub repository <a href="https://github.com/zeyad-mansour/mask-detection-monitor" target="_blank">here</a>. Our video submission from the hackathon can be found <a href="https://www.youtube.com/watch?v=nlVu1VQMswI" target="_blank">here</a>.</p>
-        </div>
-    </div>
-</div>
-        
-<div class="w3-row-padding w3-padding-64 w3-container" id="1vpp">
-    <div class="w3-content">
-        <div class="w3-twothird">
-            <h1>1VPP</h1>
-            <h5 class="w3-padding-32">A campaign advocating for equality in America's voting systems.</h5>
-
-            <p class="w3-text-dark-grey">I created a website for a campaign advocating for every American to receive exactly 1 vote in presidential elections (1VPP = 1 vote per person). You can find 1VPP <a href="/1vpp" target="_blank">here</a>.</p>
-        </div>
-
-        <div class="w3-third w3-center">
-            <img src="/img/image_2021-06-08_090553.png" width="110%" />
-        </div>
-    </div>
-</div>
-
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="mhsctf">
-    <div class="w3-content">
-        <div class="w3-third w3-center">
-            <img src="/img/mhsctf.svg" width="90%">
-        </div>
-
-        <div class="w3-twothird">
-            <h1>MHSCTF</h1>
-            <h5 class="w3-padding-32">A Capture-the-Flag cybersecurity competition.</h5>
-
-            <p class="w3-text-dark-grey">After founding Mentor High's Computer Science club, I decided to reach out to some people to collaborate and host our school's first-ever cybersecurity competition: MHSCTF. The event was a massive success! In 2022, we reached 1600+ participants in 800+ teams from 20+ countries all over the world! The 2023 competition had 2300+ participants from even more countries. You can find MHSCTF online <a href="https://mhsctf.0xmmalik.repl.co" target="_blank">here</a>.</p>
-        </div>
-    </div>
-</div>
-
-<div class="w3-row-padding w3-padding-64 w3-container" id="sang-bot">
-    <div class="w3-content">
-        <div class="w3-twothird">
-            <h1>Sang Bot</h1>
-            <h5 class="w3-padding-32">An auto-moderator Discord bot for MHSCTF.</h5>
-
-            <p class="w3-text-dark-grey">For <a href="#mhsctf">MHSCTF</a>, I created a Discord server and a bot to help me run this server. Sang Bot uses artificial intelligence to moderate messages and helps out in regular administrative processes on a Discord server. I hope to soon be able to release Sang Bot for public use.</p>
-        </div>
-
-        <div class="w3-third w3-center">
-            <img src="/img/sang_bot.png" width="60%" />
-        </div>
-    </div>
-</div>
-
-<div id="footer"></div>
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
 
 </body>
 </html>
