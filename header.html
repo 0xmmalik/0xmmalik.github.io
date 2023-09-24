@@ -1,13 +1,50 @@
 <header id="header">
-  <link rel="stylesheet" href="/assets/css/main.css" />
-<!--  <link rel="stylesheet" href="/assets/css/fontawesome-all.css">-->
-  <script src="https://kit.fontawesome.com/b5dd105912.js" crossorigin="anonymous"></script>
-  <a href="/" class="logo"><strong>Manav</strong> Malik</a>
-  <ul class="icons">
-    <li><a href="https://github.com/0xmmalik" target="_blank" class="fab fa icon brands fa-github"><span class="label">Github</span></a></li>
-    <li><a href="https://instagram.com/0xmmalik" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-    <li><a href="mailto:manavmalik36@gmail.com" target="_blank" class="icon fas fa-envelope"><span class="label">Email</span></a></li>
-    <li><a href="https://youtube.com/@0xmmalik" target="_blank" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-    <li><a href="https://linkedin.com/in/manav-malik" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-  </ul>
+    <link rel="stylesheet" href="/assets/css/main.css"/>
+    <!--  <link rel="stylesheet" href="/assets/css/fontawesome-all.css">-->
+    <script src="https://kit.fontawesome.com/b5dd105912.js" crossorigin="anonymous"></script>
+    <a href="/" class="logo"><strong>Manav</strong> Malik</a>
+    <ul class="icons">
+        <li><a href="https://github.com/0xmmalik" target="_blank" class="fab fa icon brands fa-github"><span
+                class="label">Github</span></a></li>
+        <li><a href="https://instagram.com/0xmmalik" target="_blank" class="icon brands fa-instagram"><span
+                class="label">Instagram</span></a></li>
+        <li><a href="mailto:manavmalik36@gmail.com" target="_blank" class="icon fas fa-envelope"><span class="label">Email</span></a>
+        </li>
+        <li><a href="https://youtube.com/@0xmmalik" target="_blank" class="icon brands fa-youtube"><span class="label">YouTube</span></a>
+        </li>
+        <li><a href="https://linkedin.com/in/manav-malik" target="_blank" class="icon brands fa-linkedin-in"><span
+                class="label">LinkedIn</span></a></li>
+    </ul>
 </header>
+<script>
+    // Get the button
+    let topBtn = document.getElementById("topBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            topBtn.style.display = "block";
+        } else {
+            topBtn.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<style>
+    #topBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+    }
+</style>
+<button onclick="topFunction()" id="topBtn" class="button primary" title="Scroll to top">Top</button>
