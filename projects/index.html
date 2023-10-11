@@ -6,84 +6,102 @@
 -->
 <html>
 <head>
-  <title>Projects — Manav Malik</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-  <link rel="stylesheet" href="/assets/css/fontawesome-all.css">
-  <script src="/assets/js/jquery.min.js"></script>
-  <script>
-    $(function () {
-      $("#custom-header").load("/header.html");
-      $("#sb-inner").load("/sb-inner.html");
-    });
-  </script>
+    <title>Projects — Manav Malik</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+    <link href="/assets/css/main.css" rel="stylesheet"/>
+    <link href="/assets/css/fontawesome-all.css" rel="stylesheet"/>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#custom-header").load("/header.html");
+            $("#sb-inner").load("/sb-inner.html");
+        });
+    </script>
 </head>
 <body class="is-preload">
 
 <!-- Wrapper -->
 <div id="wrapper">
 
-  <!-- Main -->
-  <div id="main">
-    <div class="inner">
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
 
-      <!-- Header -->
-      <header id="custom-header"></header>
+            <!-- Header -->
+            <header id="custom-header"></header>
 
-      <!-- Content -->
-      <section>
-        <header class="main">
-          <h1>Projects</h1>
-        </header>
+            <!-- Content -->
+            <section>
+                <header class="main">
+                    <h1>Projects</h1>
+                </header>
 
-        <p>Here are some of my favorite projects I've worked on over the years.</p>
-        <ul class="actions small">
-          <li><p>Jump to:</p></li>
-          <li><a href="#mhsctf" class="button small">MHSCTF</a></li>
-          <li><a href="#reversing" class="button small">Cornucopia</a></li>
-          <li><a href="#wicys" class="button small">WiCyS CTF</a></li>
-          <li><a href="#dark-crystal" class="button small">Dark Crystal</a></li>
-          <li><a href="#scioly" class="button small">SciOly Tests</a></li>
-        </ul>
+                <p>Here are some of my favorite projects I've worked on over the years.</p>
+                <ul class="actions small">
+                    <li><p>Jump to:</p></li>
+                    <li><a class="button small" href="#mhsctf">MHSCTF</a></li>
+                    <li><a class="button small" href="#reversing">Cornucopia</a></li>
+                    <li><a class="button small" href="#wicys">WiCyS CTF</a></li>
+                    <li><a class="button small" href="#dark-crystal">Dark Crystal</a></li>
+                    <li><a class="button small" href="#scioly">SciOly Tests</a></li>
+                </ul>
 
-        <span class="image left"><img src="/img/proj/mhsctf.svg" alt="MHSCTF logo"></span>
-        <h2 id="mhsctf">MHSCTF</h2>
-        <h4>A capture-the-flag cybersecurity competition.</h4>
-        <p>After founding Mentor High's Computer Science club, I decided to reach out to some people to collaborate and host our school's first-ever cybersecurity competition: MHSCTF. The event was a massive success! In 2022, we reached 1600+ participants in 800+ teams from 20+ countries all over the world! The 2023 competition had 2300+ participants from even more countries. You can find MHSCTF online <a href="https://mhsctf.0xmmalik.repl.co" target="_blank">here</a>.</p>
+                <span class="image left"><img alt="MHSCTF logo" src="/img/proj/mhsctf.svg"></span>
+                <h2 id="mhsctf">MHSCTF</h2>
+                <h4>A capture-the-flag cybersecurity competition.</h4>
+                <p>After founding Mentor High's Computer Science club, I decided to reach out to some people to
+                    collaborate and host our school's first-ever cybersecurity competition: MHSCTF. The event was a
+                    massive success! In 2022, we reached 1600+ participants in 800+ teams from 20+ countries all over
+                    the world! The 2023 competition had 2300+ participants from even more countries. You can find MHSCTF
+                    online <a href="https://mhsctf.0xmmalik.repl.co" target="_blank">here</a>.</p>
 
-        <span class="image right"><img src="/img/proj/cornucopia.svg" alt="Cornucopia logo"></span>
-        <h2 id="reversing">Cornucopia</h2>
-        <h4>My research paper on reverse engineering.</h4>
-        <p>As the field of cybersecurity grows ever larger, so does its influence in education. Specifically, recent years have seen a major increase in popularity of capture-the-flag competitions, of which reversing engineering (frequently of string manipulation programs) makes up a major part. These challenges involve determining the necessary inputs for a program to produce a desired output. Reverse engineering Python source code is a non-trivial task so performing it manually frequently becomes infeasible.</p>
-        <p>This paper presents Cornucopia, a partially automated reverse engineering tool that operates over Python source code to determine necessary inputs to arrive at outputs. Cornucopia takes advantage of symbolic representation to partially automate the process of reverse engineering programs that are affine or include conditional branching. A basic evaluation of Corncuopia finds that it significantly reduces human interaction in reversing, and is composable.</p>
-        <p>Read the entire paper <a href="cornucopia.pdf" target="_blank">here</a>.</p>
+                <span class="image right"><img alt="Cornucopia logo" src="/img/proj/cornucopia.svg"></span>
+                <h2 id="reversing">Cornucopia</h2>
+                <h4>My research paper on reverse engineering.</h4>
+                <p>As the field of cybersecurity grows ever larger, so does its influence in education. Specifically,
+                    recent years have seen a major increase in popularity of capture-the-flag competitions, of which
+                    reversing engineering (frequently of string manipulation programs) makes up a major part. These
+                    challenges involve determining the necessary inputs for a program to produce a desired output.
+                    Reverse engineering Python source code is a non-trivial task so performing it manually frequently
+                    becomes infeasible.</p>
+                <p>This paper presents Cornucopia, a partially automated reverse engineering tool that operates over
+                    Python source code to determine necessary inputs to arrive at outputs. Cornucopia takes advantage of
+                    symbolic representation to partially automate the process of reverse engineering programs that are
+                    affine or include conditional branching. A basic evaluation of Corncuopia finds that it
+                    significantly reduces human interaction in reversing, and is composable.</p>
+                <p>Read the entire paper <a href="cornucopia.pdf" target="_blank">here</a>.</p>
 
-        <span class="image left"><img src="/img/proj/wicys.png" alt="Women in Cybersecurity logo"></span>
-        <h2 id="wicys">WiCyS CTF 2023</h2>
-        <h4>Challenges I wrote for RIT's Women in Cybersecurity CTF.</h4>
-        <p>I wrote three challenges RIT's WiCyS CTF 2023. <a href="https://github.com/0xmmalik/wicys-ctf-2023" target="_blank">Here</a> is the repository containing the challenges and solutions (private until competition is over).</p>
+                <span class="image left"><img alt="Women in Cybersecurity logo" src="/img/proj/wicys.png"></span>
+                <h2 id="wicys">WiCyS CTF 2023</h2>
+                <h4>Challenges I wrote for RIT's Women in Cybersecurity CTF.</h4>
+                <p>I wrote three challenges RIT's WiCyS CTF 2023. <a href="https://github.com/0xmmalik/wicys-ctf-2023"
+                                                                     target="_blank">Here</a> is the repository
+                    containing the challenges and solutions (private until competition is over).</p>
 
-        <br />
-        <span class="image right"><img src="/img/proj/dark-crystal.png" alt="Minecraft creative menu with Dark Crystal mod"></span>
-        <h2 id="dark-crystal">Dark Crystal</h2>
-        <h4>A Minecraft mod.</h4>
-        <p>In a time when I enjoyed game development more than anything else, I created a Minecraft mod in Java. Dark Crystal adds new missions and items to the game.</p>
-        <iframe src="https://cfwidget.com/431909?version=1.14.4" width="100%" style="border: none;"></iframe>
+                <br/>
+                <span class="image right"><img alt="Minecraft creative menu with Dark Crystal mod"
+                                               src="/img/proj/dark-crystal.png"></span>
+                <h2 id="dark-crystal">Dark Crystal</h2>
+                <h4>A Minecraft mod.</h4>
+                <p>In a time when I enjoyed game development more than anything else, I created a Minecraft mod in Java.
+                    Dark Crystal adds new missions and items to the game.</p>
+                <iframe src="https://cfwidget.com/431909?version=1.14.4" style="border: none;" width="100%"></iframe>
 
-        <span class="image left"><img src="/img/proj/scioly.png" alt="Science Olympiad logo"></span>
-        <h2 id="scioly">SciOly Tests</h2>
-        <h4>Tests I wrote for Science Olympiad competitions.</h4>
-        <p>I've written several tests for various events in Science Olympiad competitions over the years. Find my entire library of tests <a href="/scioly">here</a>.</p>
-      </section>
+                <span class="image left"><img alt="Science Olympiad logo" src="/img/proj/scioly.png"></span>
+                <h2 id="scioly">SciOly Tests</h2>
+                <h4>Tests I wrote for Science Olympiad competitions.</h4>
+                <p>I've written several tests for various events in Science Olympiad competitions over the years. Find
+                    my entire library of tests <a href="/scioly">here</a>.</p>
+            </section>
 
+        </div>
     </div>
-  </div>
 
-  <!-- Sidebar -->
-  <div id="sidebar">
-    <div class="inner" id="sb-inner"></div>
-  </div>
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="inner" id="sb-inner"></div>
+    </div>
 
 </div>
 
