@@ -31,7 +31,42 @@
         <header class="main">
           <h1>CTF Challenge Library</h1>
         </header>
-        <p>Under construction.</p>
+        <p>Here are all the challenges I have written for various CTFs from Fall 2023 onward.</p>
+        <input type="text" id="filter" onkeyup="filter()" width="33%" placeholder="Filter by name, category, or competition...">
+        <br />
+        <div class="table-wrapper">
+          <table id="chal_table">
+            <thead>
+              <tr>
+                <th>Challenge Name</th>
+                <th>Category</th>
+                <th>Competition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="https://github.com/0xmmalik/wicys-ctf-2023/tree/main/crypto_intelligent_curve" target="_blank">Intelligent Curve</a></td>
+                <td>Cryptography</td>
+                <td>WiCyS CTF 2023</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/0xmmalik/wicys-ctf-2023/tree/main/pwn_mission_impossi-bird" target="_blank">Mission Impossi-bird</a></td>
+                <td>Binary Exploit</td>
+                <td>WiCyS CTF 2023</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/0xmmalik/wicys-ctf-2023/tree/main/foren_weird_sounds" target="_blank">Weird Sounds</a></td>
+                <td>Forensics</td>
+                <td>WiCyS CTF 2023</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/0xmmalik/wicys-ctf-2023/tree/main/crypto_aes%2B" target="_blank">AES+</a></td>
+                <td>Cryptography</td>
+                <td>WiCyS CTF 2023</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
       <br />
       <br />
@@ -40,6 +75,29 @@
       <br />
     </div>
   </div>
+
+  <script>
+    function filter() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("filter");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("chal_table");
+      tr = table.getElementsByTagName("tr");
+
+      for (i = 1; i < tr.length; i++) {
+        tr[i].style.display = "none";
+        for (j = 0; j < 3; j++) {
+          td = tr[i].getElementsByTagName("td")[j];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            }
+          }
+        }
+      }
+    }
+  </script>
 
   <!-- Sidebar -->
   <div id="sidebar">
