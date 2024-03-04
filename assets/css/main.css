@@ -1459,7 +1459,8 @@ table th {
   font-size: 0.9em;
   font-weight: 600;
   padding: 0 0.75em 0.75em 0.75em;
-  text-align: left; }
+  text-align: left;
+  cursor: pointer; }
 table thead {
   border-bottom: solid 2px rgba(210, 215, 217, 0.75); }
 table tfoot {
