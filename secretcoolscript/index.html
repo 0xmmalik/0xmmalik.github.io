@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+#--- worker: writes its current stage (1–4, then 'done') to a status file
+worker() {
+  local id="$1"
+  local file="$STATUS_DIR/proc$id"
+  # initial placeholder
+  echo -- > "$file"
+  # stages 1–4
+  for stage in 1 2 3 4; do
+    sleep $(( RANDOM % 3 + 1 ))
+    echo "$stage" > "$file"
+  done
+  # final “done”
+  sleep $(( RANDOM % 3 + 1 ))
+  echo done > "$file"
+}
+
+#--- prepare temp dir for status files, cleanup on exit
+STATUS_DIR=$(mktemp -d)
+trap 'rm -rf "$STATUS_DIR"' EXIT
+
+#--- filler before
+echo "=== Starting batch run ==="
+echo "Loading configuration..."
+echo "Connecting to services..."
+echo
+
+#--- choose random number of processes (2–5)
+NUM_PROCS=$(( RANDOM % 4 + 2 ))
+echo "Spawning $NUM_PROCS worker process(es)..."
+echo
+
+#--- launch workers in background
+for ((i=1; i<=NUM_PROCS; i++)); do
+  worker "$i" &
+done
+
+#--- print header + initial placeholder lines
+echo "Progress:"
+for ((i=1; i<=NUM_PROCS; i++)); do
+  # ensure the status file exists before we first read it
+  : > "$STATUS_DIR/proc$i"
+  echo "Process $i: stage --"
+done
+
+#--- live-update loop
+while :; do
+  # move cursor UP N lines so we overwrite those progress lines
+  echo -ne "\033[${NUM_PROCS}A"
+  all_done=true
+
+  # rewrite each line from its status file
+  for ((i=1; i<=NUM_PROCS; i++)); do
+    stage=$(<"$STATUS_DIR/proc$i")
+    printf "Process %d: stage %s\n" "$i" "$stage"
+    [[ "$stage" != done ]] && all_done=false
+  done
+
+  $all_done && break
+  sleep 0.5
+done
+
+#--- filler after
+echo
+echo "=== All processes finished! ==="
+echo "Cleaning up and exiting."
