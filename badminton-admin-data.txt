@@ -20,7 +20,7 @@
         },
         {
           "games": [
-            { "manavScore": 0, "ninaScore": 0 },
+            { "manavScore": 21, "ninaScore": 17 },
             { "manavScore": 0, "ninaScore": 0 },
             { "manavScore": 0, "ninaScore": 0 }
           ]
