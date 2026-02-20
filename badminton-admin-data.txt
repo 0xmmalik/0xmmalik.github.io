@@ -20,7 +20,7 @@
         },
         {
           "games": [
-            { "manavScore": 23, "ninaScore": 21 },
+            { "manavScore": 0, "ninaScore": 0 },
             { "manavScore": 0, "ninaScore": 0 },
             { "manavScore": 0, "ninaScore": 0 }
           ]
@@ -33,7 +33,7 @@
       "sets": [
         {
           "games": [
-            { "manavScore": 0, "ninaScore": 0 },
+            { "manavScore": 23, "ninaScore": 21 },
             { "manavScore": 0, "ninaScore": 0 },
             { "manavScore": 0, "ninaScore": 0 }
           ]
