@@ -61,7 +61,7 @@
         {
           "games": [
             { "manavScore": 21, "ninaScore": 16 },
-            { "manavScore": 0, "ninaScore": 0 },
+            { "manavScore": 13, "ninaScore": 21 },
             { "manavScore": 0, "ninaScore": 0 }
           ]
         },
